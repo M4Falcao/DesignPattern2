@@ -1,0 +1,2 @@
+Factories e Builders são classes cuja responsabilidade é lidar com o processo de criação de objetos complexos. 
+Faça uso de Factories sempre que a criação de um objeto possa mudar em algum momento.

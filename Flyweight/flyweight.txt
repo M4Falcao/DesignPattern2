@@ -1,0 +1,9 @@
+Vamos criar uma classe, parecida com uma Factory, que instanciará uma nota de cada, 
+e sempre que alguém pedir uma nota, ela devolverá sempre a mesma instância:
+
+Veja só a classe NotasMusicais. Ela é uma fábrica, que tem um mapa, que guarda uma instância de cada nota.
+
+Sempre que temos uma quantidade grande de objetos similares a serem instanciados, 
+uma boa solução é fazer cache dessas instâncias e reutilizá-la. 
+Para isso, a implementação é geralmenta fazer uso de uma fábrica, que controla as instâncias. 
+Esse padrão é conhecido por flyweight.

@@ -1,0 +1,10 @@
+E pronto. Agora temos uma maneira eficiente de salvar estados de um objeto, e restaurá-los caso necessário.
+Sempre que temos um problema como esse, fazemos uso do Memento.
+O Memento é um padrão de projeto que nos ajuda a salvar e restaurar estados de objetos.
+
+Sim, poderíamos guardar diretamente a lista de Contratos. Mas veja que isso depende do problema. 
+No nosso caso, não tínhamos outra informação para associar ao "estado". 
+Se tivéssemos que armazenar, por exemplo, a data que o estado foi salvo, a classe Estado faria sentido.
+
+As definições de padrões de projeto são geralmente as mais genéricas possíveis para dar suporte a qualquer problema. 
+Mas você obviamente deve implementar o padrão de acordo com o seu problema.
