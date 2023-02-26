@@ -1,0 +1,11 @@
+Veja que com essa solução se quiséssemos implementar uma nova forma de envio de mensagens, 
+precisaríamos apenas de uma nova classe implementando a interface IEnviador, 
+não temos que nos preocupar com os tipos de mensagem que já existem no sistema.
+
+Nessa solução estamos ligando duas hierarquias que possuem responsabilidades distintas através de composição de classes. 
+Essa composição funciona como uma ponte entre as duas hierarquias de classes e, por isso, esse padrão é conhecido como bridge.
+
+Quando temos uma hierarquia de classes que é responsável por diversas características do sistema 
+(formatação e envio da mensagem, no exemplo), 
+podemos utilizar o padrão bridge para separar as características em diversas hierarquias 
+ligando-as através da composição de classes.
