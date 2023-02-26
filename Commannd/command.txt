@@ -1,0 +1,11 @@
+Repare que cada comando recebe um Pedido, e já sabe exatamente qual método invocar.
+
+Dessa forma, temos uma "fila de comandos" a ser executada, e podemos executar da maneira que acharmos melhor. 
+Vamos melhorar um pouco a classe que cuida da fila, e dar métodos para adicionar e processar todos:
+
+Pronto. Agora temos uma fila, que executa comandos em cima dos nossos pedidos. 
+E executá-los ficou fácil. Criar novos comandos também é fácil.
+
+O nome dessa padrão de projeto, que facilita a criação de comandos, chama-se Command. 
+Usamos ele quando temos que separar os comandos que serão executados do objeto que ele pertence. 
+Um bom exemplo disso é o uso de filas de trabalho.

@@ -52,11 +52,24 @@ Console.WriteLine();
 soma.Aceita(preFixa);
 */
 
+/*
 using DesignPattern2.Bridge;
 
 IMensagem mensagem = new MensagemAdmin("Carlos");
 mensagem.Enviador = new EnviaPorEmail();
 mensagem.Envia();
+*/
 
+using DesignPattern2.Commannd;
+
+Pedido pedido1 = new Pedido("Mateus", 30.1);
+Pedido pedido2 = new Pedido("Lucas", 28.17);
+
+FilaDeTrabalho filaDeTrabalho = new FilaDeTrabalho();
+filaDeTrabalho.Adiciona(new PagaPedido(pedido1));
+filaDeTrabalho.Adiciona(new PagaPedido(pedido2));
+filaDeTrabalho.Adiciona(new FinalizaPedido(pedido2));
+
+filaDeTrabalho.Processa();
 
 
