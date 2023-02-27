@@ -59,7 +59,7 @@ IMensagem mensagem = new MensagemAdmin("Carlos");
 mensagem.Enviador = new EnviaPorEmail();
 mensagem.Envia();
 */
-
+/*
 using DesignPattern2.Commannd;
 
 Pedido pedido1 = new Pedido("Mateus", 30.1);
@@ -71,5 +71,18 @@ filaDeTrabalho.Adiciona(new PagaPedido(pedido2));
 filaDeTrabalho.Adiciona(new FinalizaPedido(pedido2));
 
 filaDeTrabalho.Processa();
+*/
+
+using DesignPattern2.Adapter;
+
+Cliente cliente = new Cliente();
+cliente.Nome = "mateus";
+cliente.Endereco = "Rua avenida";
+cliente.DataNascimento = DateTime.Now;
+
+GeradorXML gerador = new GeradorXML();
+String xml = gerador.GeraXml(cliente);
+
+Console.WriteLine(xml);
 
 

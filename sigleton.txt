@@ -1,0 +1,1 @@
+O Singleton nos ajuda a ter uma única instância do objeto ao longo do sistema.
